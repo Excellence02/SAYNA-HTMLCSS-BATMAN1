@@ -1,3 +1,82 @@
- header {image-rendering: auto;
+  @import url('https://fonts.googleapis.com/css2?family=Rajdhani:wght@300;400;500;600;700&family=Space+Grotesk:wght@300;400;500;600;700&display=swap');
 
- }
+@font-face{
+    font-family: 'rajdhani';
+    src: url(../police/Rajdhani-Medium.ttf); 
+}
+:root{
+    --yellow-color: #FFFF00;
+    --yellow-light: #f8f184; 
+    --bleu: #19587D;
+    --rouge: #B11313;
+    --blanc: #FFF;
+    --Noire: #000;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+h1{
+    font-family: 'rajdhani';
+    font-size: 36px;
+    font-weight: 400;
+}
+button{
+    font-family: 'rajdhani';
+    font-size: 20px;
+    font-weight: 400;
+}
+
+.container{
+    width: 80%;
+    margin: 0 auto;
+}
+body{
+    background-color: black ;
+    opacity: 0,4;
+    color: white;
+    font-family: 'Space-Grotesk';
+    font-weight: 300;
+}
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+}
+ul{
+    list-style: none;
+}
+nav ul a{
+    color: var(--blanc);
+    font-size: 30px;
+    font-weight: 500;
+    font-family: 'rajdhani';
+}
+
+ul a:hover{
+    color: var(--yellow-color);
+}
+
+/* design partie hero*/
+
+#hero{
+    background-image: url(../Illustrations/Bathome1.png);
+    height: 800px;
+}
+
+div img{
+    display: flex;
+}
+
+/* Dising la ssection personnage 1*/
+
+.personnage1-batman{
+    display: flex;
+    justify-content: space-between;
+}
+
+p{
+    justify-content: space-around;
+}
