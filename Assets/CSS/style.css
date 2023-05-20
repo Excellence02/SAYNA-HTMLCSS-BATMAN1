@@ -10,7 +10,10 @@
     --bleu: #19587D;
     --rouge: #B11313;
     --blanc: #FFF;
-    --Noire: #000;
+    --Noire: #0000;
+    --gris: #C4C4C4;
+    --pink-light: #eddebf60;
+    --grardien: #8900095d;
 }
 *{
     margin: 0;
@@ -36,14 +39,14 @@ body{
     background-color: black ;
     opacity: 0,4;
     color: white;
-    font-family: 'Space-Grotesk';
+    font-family: 'Space Grotesk';
     font-weight: 300;
 }
 nav{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 20px;
+    padding: 60px;
 }
 ul{
     list-style: none;
@@ -64,8 +67,61 @@ ul a:hover{
 #hero{
     background-image: url(../Illustrations/Bathome1.png);
     height: 800px;
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-color: #19587D;
+    background-size: cover;
 }
 
+.content{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    width: 70%;
+    margin: auto;
+    padding-top: 250px;
+}
+.contenue-acceuille{
+    right: 30%;
+    margin: 2%;
+    font-size: 155%;
+}
+#hero .titre{
+    margin: 20px 0;
+}
+
+.scroll{
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    position: fixed;
+    right: 50px;
+    align-items: center;
+    top: 300px;
+}
+
+.scroll .reseau{
+    margin-top: 30px;
+}
+
+.btn{
+    text-decoration: none;
+    color: var(--blanc);
+    font-size: 25px;
+    padding: 3px 20px;
+    margin: 25px;
+    background: linear-gradient(
+        80deg,var(--pink-light),var(--grardien)
+    );
+    box-shadow: var(--Noire); 
+    margin-top: 10px; 
+}
+#hero .flèche{
+    display: block;
+    padding: 400px;
+    margin:  auto;
+}
 div img{
     display: flex;
 }
@@ -75,8 +131,66 @@ div img{
 .personnage1-batman{
     display: flex;
     justify-content: space-between;
+    image-resolution: 200px;
 }
 
 p{
     justify-content: space-around;
+}
+
+.titre{
+    margin-top: 100px;
+}
+
+#cinéma .description{
+    margin-top: 20px;
+}
+
+.personnage1-batman{
+    margin-top: 40px;
+}
+
+.description{
+    text-align: justify;
+    margin-bottom: 40px;
+    width: 70%;
+    max-height: 30%;
+    top: 30px;
+    margin-top: 20px;
+    font-size: 20px;
+}
+
+/* les figure style*/
+
+/* partie allié batman le figurant à droite*/
+.container .batmannoir{
+    display: block;
+    margin: 0 auto;
+    right: 50px;
+    align-items: flex-end;
+    top: 300px;
+}
+
+.bat{
+    display: block;
+    padding: 2px;
+    margin-top: 0 auto;
+    margin: 2px;
+    width: 18%;
+    height: 20%;
+    align-items: center;
+}
+.page{
+    display: flex;
+    flex: 30%;
+    width: 60%;
+    font-size: 10px;
+    justify-content: center;
+    margin: 0% auto;
+}
+
+/*position des flèches*/
+.flèche-direction-back{
+    display: block;
+    margin:  auto;   
 }
